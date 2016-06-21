@@ -1,0 +1,6 @@
+SELECT * FROM m_reserve_userdetails WHERE res_no='9r36657ccxj';
+SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_name` = 'jithuk1988';
+SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_id` = '97419';
+SELECT * FROM user_details WHERE email='jithu.trivandrum@gmail.com';
+SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_id` = '97877';
+SELECT * FROM user_details WHERE `user_id` = '97877';
