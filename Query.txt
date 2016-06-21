@@ -4,3 +4,5 @@ SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_id` = '97419';
 SELECT * FROM user_details WHERE email='jithu.trivandrum@gmail.com';
 SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_id` = '97877';
 SELECT * FROM user_details WHERE `user_id` = '97877';
+SELECT user_id,email,res_no,indate,outdate,`status`,total FROM m_reserve_userdetails WHERE res_no='9r36657ccxj';
+
