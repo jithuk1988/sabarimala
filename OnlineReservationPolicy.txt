@@ -1,8 +1,9 @@
 p_checkout_time
+p_roomstatus
 p_genpublic_seasons
 t_donor_rentcheck
 m_season
-p_roomstatus
+
 
 
 INSERT INTO `p_checkout_time` (`season_id`, `season_sub_id`, `room_category_id`, `checkout_time`, `inmates`, `alter_charges`, `type_id`, `updated_on`, `updated_by`, `row_status`) VALUES('286','9','5','12','2','50','1',NULL,NULL,'0');
