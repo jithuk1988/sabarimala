@@ -5,4 +5,6 @@ SELECT * FROM user_details WHERE email='jithu.trivandrum@gmail.com';
 SELECT * FROM `sabarimala_acc`.`user_logindetails` WHERE `user_id` = '97877';
 SELECT * FROM user_details WHERE `user_id` = '97877';
 SELECT user_id,email,res_no,indate,outdate,`status`,total FROM m_reserve_userdetails WHERE res_no='9r36657ccxj';
-
+SELECT * FROM t_paymentledger WHERE userid='52210'
+SELECT * FROM onlinepayment_details WHERE transaction_no='9r37223ghlr';
+SELECT * FROM m_reserve_userdetails WHERE user_id='96673';
