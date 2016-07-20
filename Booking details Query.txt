@@ -1,0 +1,21 @@
+SELECT 
+  `onlinepayment_details`.`transaction_no`,
+  DATE_FORMAT(`online_bookingdetails`.`date`,'%d-%m-%Y') AS 'Booked Date',
+  CONCAT(
+    `online_bookingdetails`.`name`,
+    `online_bookingdetails`.`lastname`
+  ) AS 'Swami Name',
+  `online_bookingdetails`.`address`,
+  `online_bookingdetails`.`email`,
+  `online_bookingdetails`.`mobile_no`,
+  `stockmaster`.`description`,
+  DATE_FORMAT(`prasadam_details`.`delvry_date`,'%d-%m-%Y') AS 'Delivery Date',
+  prasadam_details.`quantity`,
+  prasadam_details.`unit_price`,
+  `onlinepayment_details`.`amount` 
+FROM
+  `onlinepayment_details` 
+  INNER JOIN `online_bookingdetails` ON `onlinepayment_details`.`transaction_no`=`online_bookingdetails`.`trans_id`
+  INNER JOIN prasadam_details ON `online_bookingdetails`.`booking_id`=prasadam_details.`booking_id`
+  INNER JOIN stockmaster ON prasadam_details.`stockid`=stockmaster.`stockid`
+  WHERE onlinepayment_details.`transaction_no` LIKE '13S%' AND `onlinepayment_details`.`auth_status`='0300';
