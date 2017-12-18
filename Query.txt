@@ -8,3 +8,7 @@ SELECT user_id,email,res_no,indate,outdate,`status`,total FROM m_reserve_userdet
 SELECT * FROM t_paymentledger WHERE userid='52210'
 SELECT * FROM onlinepayment_details WHERE transaction_no='9r37223ghlr';
 SELECT * FROM m_reserve_userdetails WHERE user_id='96673';
+
+
+
+QA
